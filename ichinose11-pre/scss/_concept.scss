@@ -1,0 +1,56 @@
+.concept {
+    padding: 0 107px 0;
+    @include sp {
+        padding: 0 20px 0;
+    }
+        &:before {
+            background-color: red;
+            width: 1000px;
+            height: 800px;
+        }
+        
+        
+        &__img-wrap {
+            display: flex;
+            justify-content: space-between;
+            }
+            .concept__img1 {
+                width: 60%;
+                height: 413px;
+                @include sp {
+                    width: 43%;
+                    height: 205px;
+                }
+            }
+            .concept__img2 {
+                height: 413px;
+                width: 38%;
+                @include sp {
+                    width: 43%;
+                    height: 205px;
+                }
+            }
+        &__text-wrap {
+            height: 260px;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            @include sp {
+                display: block;
+            }
+            .concept__text1 {
+                font-size: 4rem;
+                letter-spacing: 7px;
+                text-align: center;
+            }
+            .concept__text2 {
+                width: 422px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+            }
+        }
+}
+

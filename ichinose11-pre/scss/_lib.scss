@@ -1,0 +1,41 @@
+@mixin pc  {
+    @media screen and(min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and(max-width: 959px) {
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: #707070;
+    padding-top: 260px;
+    letter-spacing: 3px;
+    @include sp {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        background-color: #707070;
+        height: 1px;
+        margin-bottom: 4px;
+        margin-left: 22px;
+        width: 95px;
+    }
+}
+
+

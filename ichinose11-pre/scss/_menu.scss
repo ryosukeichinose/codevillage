@@ -1,0 +1,43 @@
+.menu {
+    padding: 0 107px 0;
+    @include sp {
+        padding: 0 20px 0;
+    }
+    &__item-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include sp {
+            display: block;
+        }
+    }
+    &__item {
+        width: 25%;
+        height: 555px;
+        @include sp {
+            width: 98%;
+        }
+        img {
+            width: 100%;
+            @include sp {
+                height: 271px;
+            }
+        }
+        h4 {
+            font-size: 3rem;
+            padding-top: 37px;
+            text-align: center;
+            @include sp {
+                text-align: left;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            width: 90%;
+            padding-top: 37px;
+        }
+    }
+    &__cost {
+        text-align: right;
+    }
+}
